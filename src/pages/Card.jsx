@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({book}) => {
   return (
     <>
 <div>
@@ -8,13 +8,13 @@ const Card = () => {
   <div className="max-w-sm rounded overflow-hidden shadow-lg" style={{fontFamily: '"Strait", sans-serif'}}>
     <img className="w-full" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfJ5hSkM1pGC5I_gTNx-Bmpyb0QrwWm-TwiARKclttVPrZrIKfr0bTHyP0afaIHL7zks-AbODA7zAf9LYhKdKVM6s2YXB8jkFl-fWBTmse2y6O68grQjw6tOOMrtdsG1qkVOwRT05R5XVZIoRoJFsn_wUqkrABJwEGZN0Q0OZlLZxis2zkhOH2u1RI_dNd/s518/colobus.jpg" alt="Sunset in the mountains" />
     <div className="px-6 py-4">
-      <div className="font-bold text-xl mb-2">Harry Potter</div>
+      <div className="font-bold text-xl mb-2">{book.bookKoName}</div>
       <p className="text-gray-700 text-base">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+        {book.bookAuthor}
       </p>
       <br />
       <a target="_blank" href="https://bootsnipp.com/muhittinbudak" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-        Buy Book 
+        Rs.{book.bookPrice} 
       </a>
     </div>
     <div className="px-6 pt-4 pb-2">
