@@ -28,18 +28,12 @@ const Card = ({ book }) => {
                 href="https://bootsnipp.com/muhittinbudak"
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
               >
-                Rs.{book.bookPrice}
+                ${book.bookPrice}
               </a>
             </div>
             <div className="px-6 pt-4 pb-2">
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #Sci-Fi
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #Mystery
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #Magic
+                #{book.bookGenre}
               </span>
             </div>
           </div>
