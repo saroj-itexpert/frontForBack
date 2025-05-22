@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -29,12 +30,12 @@ const Navbar = () => {
           <nav>
             <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
               <li>
-                <a
+                <Link
                   className="md:p-4 py-3 px-0 block md:mb-0 mb-2 bg-green-500 text-white rounded-2xl"
-                  href="/create-page"
+                  to="/create-page"
                 >
-                  + Create{" "}
-                </a>
+                  + Create
+                </Link>
               </li>
             </ul>
           </nav>
