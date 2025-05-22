@@ -14,11 +14,11 @@ const Card = ({ book }) => {
             className="max-w-sm mr-5 mb-5 rounded overflow-hidden shadow-lg"
             style={{ fontFamily: '"Strait", sans-serif' }}
           >
-            <img
-              className="w-full"
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfJ5hSkM1pGC5I_gTNx-Bmpyb0QrwWm-TwiARKclttVPrZrIKfr0bTHyP0afaIHL7zks-AbODA7zAf9LYhKdKVM6s2YXB8jkFl-fWBTmse2y6O68grQjw6tOOMrtdsG1qkVOwRT05R5XVZIoRoJFsn_wUqkrABJwEGZN0Q0OZlLZxis2zkhOH2u1RI_dNd/s518/colobus.jpg"
-              alt="Sunset in the mountains"
-            />
+            {/* <img
+              className="w-full h-50 "
+              src="https://m.media-amazon.com/images/I/810BkqRP+iL._SL1500_.jpg"
+              alt="Book"
+            /> */}
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{book.bookKoName}</div>
               <p className="text-gray-700 text-base">{book.bookAuthor}</p>
